@@ -36,16 +36,13 @@
 
          <form class="form" action="upload.php" method="POST" enctype="multipart/form-data">
             <div class="row">
-               <div class="form-group pull-left">
-                  <input type="file" name="fileupload[]" class="hidden fileupload" value="1" />
-                  <div class="dvPreview thumbnail"><small>Click me</small></div>
+               <div class="form-group col-md-3">
+                  <input type="file" name="fileupload" id="fileupload" />
                </div>
-
-               <div class="form-group pull-left">
-                  <input type="file" name="fileupload[]" class="hidden fileupload" value="1" />
-                  <div class="dvPreview thumbnail"></div>
-               </div>
-
+            </div>
+            <div class="row">
+               <div id="dvPreview" class="col-md-3 thumbnail" style="width: 100px; height:100px;">
+            </div>
          </div>
 
             <div class="row">

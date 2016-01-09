@@ -21,3 +21,10 @@ a.navbar-brand{
 .navbar-nav > li > a{
 	color: #FFF;
 }
+
+
+.dvPreview{
+	width: 100px; 
+	height:100px;
+	cursor: pointer;
+}

@@ -12,17 +12,15 @@
     webApp.openDialog = function(){
         var that = $(this);
         var parent_input = that.parent().find('input[type="file"]')[0];
+
         parent_input.click();
     }
 
     webApp.genPreview = function() {
 
         if (typeof (FileReader) != "undefined") {
-            var that = $(this);
-            var dvPreview = that.parent().find("div.dvPreview");
-
+            var dvPreview = $(".dvPreview");
             dvPreview.html("");
-            
             var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
             $($(this)[0].files).each(function () {
                 var file = $(this);
