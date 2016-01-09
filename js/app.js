@@ -7,6 +7,12 @@
     webApp.init = function(){
         $(document).on('change', '.fileupload', webApp.genPreview);
         $(document).on('click', '.dvPreview', webApp.openDialog);
+        $(document).on('click', '.btnDeleteUpload', webApp.deleteUpload);
+    };
+
+    webApp.deleteUpload = function(){
+        var that = $(this);
+        that.parent().remove();
     };
 
     webApp.openDialog = function(){

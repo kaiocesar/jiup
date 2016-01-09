@@ -25,17 +25,36 @@ a.navbar-brand{
 
 
 /* jiup */
-.dvPreview{
+.contentPreview{
 	position: relative;
 	width: 102px; 
 	height:102px;
+	z-index: 1;
+	float: left;	
+	margin-right: 10px;
+}
+.dvPreview{		
 	cursor: pointer;
 	padding:2px;
 	border:1px solid #CCC;
-	margin-right: 10px;
-	float: left;
 }
 
 .dvPreview span{
-	color:#f90;
+	color: #333;
+    display: block;
+    font-size: 12px;
+    margin: 6px;
 }
+
+.dvPreview img.camera{
+	margin-top:20px;
+	width:40%;
+}
+
+.dvPreview button{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+}
+

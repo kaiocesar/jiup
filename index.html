@@ -36,19 +36,33 @@
 
          <form class="form" action="upload.php" method="POST" enctype="multipart/form-data">
             <div class="row">
-               <div class="form-group pull-left">
+
+               <div class="contentPreview">
                   <input type="file" name="fileupload[]" class="hidden fileupload"  accept=".jpg, .jpeg, .png" />
-                  <div class="dvPreview"><span>Adicionar foto</span></div>
+                  <div class="dvPreview text-center">
+                     <img src="img/icon-camera.png" width="40%" class="camera" />
+                     <span>Adicionar foto</span>                     
+                  </div>
+                  <button class="btn btn-xs btn-danger btnDeleteUpload"  style="width:100%;" type="button">Delete</button>
                </div>
 
-               <div class="form-group pull-left">
+
+               <div class="contentPreview">
                   <input type="file" name="fileupload[]" class="hidden fileupload"  accept=".jpg, .jpeg, .png" />
-                  <div class="dvPreview"></div>
+                  <div class="dvPreview text-center">
+                     <img src="img/icon-camera.png" width="40%" class="camera" />
+                     <span>Adicionar foto</span>                     
+                  </div>
+                  <button class="btn btn-xs btn-danger btnDeleteUpload"  style="width:100%;" type="button">Delete</button>
                </div>
 
-         </div>
 
+
+
+            </div>
+            <br/>
             <div class="row">
+
                <div class="form-group col-md-3">
                   <button class="btn btn-primary btn-default pull-right">Submit</button>
                </div>
