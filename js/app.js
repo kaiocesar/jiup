@@ -22,7 +22,7 @@
             var dvPreview = that.parent().find("div.dvPreview");
 
             dvPreview.html("");
-            
+
             var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
             $($(this)[0].files).each(function () {
                 var file = $(this);
@@ -30,7 +30,7 @@
                     var reader = new FileReader();
                     reader.onload = function (e) {
                         var img = $("<img />");
-                        img.attr("style", "height:100px;width: 100px");
+                        img.attr("style", "height:96px;width: 96px");
                         img.attr("src", e.target.result);
                         dvPreview.append(img);
                     }

@@ -23,8 +23,19 @@ a.navbar-brand{
 }
 
 
+
+/* jiup */
 .dvPreview{
-	width: 100px; 
-	height:100px;
+	position: relative;
+	width: 102px; 
+	height:102px;
 	cursor: pointer;
+	padding:2px;
+	border:1px solid #CCC;
+	margin-right: 10px;
+	float: left;
+}
+
+.dvPreview span{
+	color:#f90;
 }
